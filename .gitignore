@@ -1,0 +1,14 @@
+# IDE / System
+.vscode/
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+.env
+
+# Temporary files
+*.log
+.gemini/
+scratch/
+update_html.py
+update_paths_root.py

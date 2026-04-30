@@ -1,0 +1,23 @@
+{
+  "name": "react-tutorial-docs",
+  "version": "1.0.0",
+  "description": "Professional ReactJS Tutorial Documentation Site",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx lite-server",
+    "start": "npx lite-server"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "docs",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Florante",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

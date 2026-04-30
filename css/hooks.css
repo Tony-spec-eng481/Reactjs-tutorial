@@ -1,0 +1,14 @@
+.hook-card {
+    background: linear-gradient(to right, var(--bg-card), var(--bg-main));
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.hook-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: var(--primary);
+}

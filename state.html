@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Tutorial - State Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/state.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1><a href="index.html">⚛️ Florante's ReactJS</a></h1>
+        </div>
+        <div class="navbar-search" style="margin-left: auto; margin-right: 2rem;">
+            <input type="text" placeholder="Search documentation..." style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border); width: 250px; font-size: 0.875rem;">
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="functions.html">Functions & JSX</a></li>
+                <li><a href="jsx.html">JSX in Depth</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Core Concepts</h3>
+            <ul>
+                <li><a href="state.html">State Management</a></li>
+                <li><a href="props.html">Props</a></li>
+                <li><a href="events.html">Event Handling</a></li>
+                <li><a href="hooks.html">Hooks</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Advanced</h3>
+            <ul>
+                <li><a href="lists.html">Lists & Keys</a></li>
+                <li><a href="conditional.html">Conditional Rendering</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>State Management</h1>
+            
+            <div class="info-box">
+                <strong>🔄 What is State?</strong>
+                <p>State allows React components to change their output over time in response to user actions, network responses, and anything else.</p>
+            </div>
+
+            <div class="state-viz">
+                <p>Current Counter Value:</p>
+                <div class="state-value">5</div>
+                <button class="demo-button" data-demo="state">Increment State</button>
+            </div>
+
+            <pre><code>import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() => setCount(count + 1)}&gt;
+        Click me
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+            <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.875rem;">
+                <p>© 2026 Florante's ReactJS Tutorial. Built with modern web standards.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.function-viz {
+    padding: 1.5rem;
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: var(--radius);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.param { color: #fbbf24; }
+.return { color: #34d399; }

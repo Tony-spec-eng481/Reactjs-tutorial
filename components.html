@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Tutorial - Components</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1><a href="index.html">⚛️ Florante's ReactJS</a></h1>
+        </div>
+        <div class="navbar-search" style="margin-left: auto; margin-right: 2rem;">
+            <input type="text" placeholder="Search documentation..." style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border); width: 250px; font-size: 0.875rem;">
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="functions.html">Functions & JSX</a></li>
+                <li><a href="jsx.html">JSX in Depth</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Core Concepts</h3>
+            <ul>
+                <li><a href="state.html">State Management</a></li>
+                <li><a href="props.html">Props</a></li>
+                <li><a href="events.html">Event Handling</a></li>
+                <li><a href="hooks.html">Hooks</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Advanced</h3>
+            <ul>
+                <li><a href="lists.html">Lists & Keys</a></li>
+                <li><a href="conditional.html">Conditional Rendering</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>React Components</h1>
+            
+            <div class="info-box">
+                <strong>🎯 What are Components?</strong>
+                <p>Components are the building blocks of React applications. They let you split the UI into independent, reusable pieces.</p>
+            </div>
+
+            <h2>Types of Components</h2>
+            
+            <h3>1. Functional Components</h3>
+            <p>Functional components are JavaScript functions that return JSX.</p>
+            <pre><code>function Greeting() {
+  return &lt;h1&gt;Hello from Functional Component!&lt;/h1&gt;;
+}</code></pre>
+
+            <h3>2. Class Components (Legacy)</h3>
+            <p>Class components use ES6 classes and have additional features like lifecycle methods.</p>
+            <pre><code>class Greeting extends React.Component {
+  render() {
+    return &lt;h1&gt;Hello from Class Component!&lt;/h1&gt;;
+  }
+}</code></pre>
+
+            <h2>Component Composition</h2>
+            <p>Components can refer to other components in their output.</p>
+            <pre><code>function Welcome() {
+  return &lt;h1&gt;Welcome!&lt;/h1&gt;;
+}
+
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;Welcome /&gt;
+      &lt;Welcome /&gt;
+      &lt;Welcome /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+            <div class="warning-box">
+                <strong>📌 Important Rules:</strong>
+                <ul>
+                    <li>Component names must start with a capital letter</li>
+                    <li>Components can only return one parent element</li>
+                    <li>Components should be pure functions (no side effects)</li>
+                </ul>
+            </div>
+
+            <h2>Component Hierarchy Example</h2>
+            <pre><code>// Parent Component
+function Header() {
+  return &lt;h1&gt;My Website&lt;/h1&gt;;
+}
+
+// Child Component
+function Navbar() {
+  return (
+    &lt;nav&gt;
+      &lt;a href="/"&gt;Home&lt;/a&gt;
+      &lt;a href="/about"&gt;About&lt;/a&gt;
+    &lt;/nav&gt;
+  );
+}
+
+// App Component (Parent of all)
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;Header /&gt;
+      &lt;Navbar /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+            <button class="demo-button" data-demo="component">See Component Demo</button>
+            <div id="demo-output-component"></div>
+            
+            <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.875rem;">
+                <p>© 2026 Florante's ReactJS Tutorial. Built with modern web standards.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

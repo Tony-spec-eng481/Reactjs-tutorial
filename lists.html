@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Tutorial - Lists & Keys</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lists.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1><a href="index.html">⚛️ Florante's ReactJS</a></h1>
+        </div>
+        <div class="navbar-search" style="margin-left: auto; margin-right: 2rem;">
+            <input type="text" placeholder="Search documentation..." style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border); width: 250px; font-size: 0.875rem;">
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="functions.html">Functions & JSX</a></li>
+                <li><a href="jsx.html">JSX in Depth</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Core Concepts</h3>
+            <ul>
+                <li><a href="state.html">State Management</a></li>
+                <li><a href="props.html">Props</a></li>
+                <li><a href="events.html">Event Handling</a></li>
+                <li><a href="hooks.html">Hooks</a></li>
+            </ul>
+            <h3 style="margin-top: 2rem;">Advanced</h3>
+            <ul>
+                <li><a href="lists.html">Lists & Keys</a></li>
+                <li><a href="conditional.html">Conditional Rendering</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Lists & Keys</h1>
+            
+            <div class="info-box">
+                <strong>📜 Rendering Multiple Components</strong>
+                <p>You can build collections of elements and include them in JSX using curly braces <code>{}</code>.</p>
+            </div>
+
+            <pre><code>const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  &lt;li key={number.toString()}&gt;
+    {number}
+  &lt;/li&gt;
+);
+
+ReactDOM.render(
+  &lt;ul&gt;{listItems}&lt;/ul&gt;,
+  document.getElementById('root')
+);</code></pre>
+
+            <div class="list-item-ui">
+                <span class="key-badge">key: 1</span> Item 1
+            </div>
+            <div class="list-item-ui">
+                <span class="key-badge">key: 2</span> Item 2
+            </div>
+
+            <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.875rem;">
+                <p>© 2026 Florante's ReactJS Tutorial. Built with modern web standards.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
