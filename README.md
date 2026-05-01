@@ -1,46 +1,16 @@
-# ReactJS Tutorial - Modern Documentation Site
+# React + Vite
 
-A professional, high-performance documentation site for learning ReactJS. Built with modern web standards, featuring a clean design, interactive demos, and comprehensive coverage of core React concepts.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Live Demo
-This project is optimized for **GitHub Pages**. Once hosted, it provides a seamless learning experience with:
-- **Responsive Layout**: Optimized for desktop, tablet, and mobile.
-- **Interactive Demos**: Simulated React component behavior directly in the browser.
-- **Code Highlights**: Beautiful code blocks with one-click copy functionality.
-- **Modern Typography**: Powered by Google Fonts (Inter & JetBrains Mono).
+Currently, two official plugins are available:
 
-## 📂 Project Structure
-- `index.html`: Homepage and Introduction.
-- `components.html`, `state.html`, `props.html`, etc.: Specialized topic pages.
-- `css/`: Design system and component-specific styles.
-- `js/main.js`: Core interactivity and demo logic.
-- `assets/`: Static resources and media.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🛠 Local Development
-To run this project locally, you can use any static web server. 
+## React Compiler
 
-### Using Node.js (Recommended)
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the dev server:
-   ```bash
-   npm run dev
-   ```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Simple Alternatives
-- **VS Code**: Use the "Live Server" extension.
-- **Python**: Run `python3 -m http.server 8000` in the root directory.
+## Expanding the ESLint configuration
 
-## ⚛️ Topics Covered
-- **Getting Started**: Introduction, Components, Functions & JSX.
-- **Core Concepts**: State Management, Props, Event Handling, Hooks.
-- **Advanced**: Lists & Keys, Conditional Rendering.
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-*Built with ❤️ by Florante.*
-# Reactjs-tutorial
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

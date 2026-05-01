@@ -1,112 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReactJS Tutorial - Modern Web Development</title>
-    <meta name="description" content="Learn ReactJS from scratch with our comprehensive, component-based tutorial. Master hooks, state, and props.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/introduction.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <h1><a href="index.html">⚛️ Florante's ReactJS</a></h1>
-        </div>
-        <div class="navbar-search" style="margin-left: auto; margin-right: 2rem;">
-            <input type="text" placeholder="Search documentation..." style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border); width: 250px; font-size: 0.875rem;">
-        </div>
-    </nav>
-
-    <div class="container">
-        <aside class="sidebar">
-            <h3>Getting Started</h3>
-            <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="functions.html">Functions & JSX</a></li>
-                <li><a href="jsx.html">JSX in Depth</a></li>
-            </ul>
-            <h3 style="margin-top: 2rem;">Core Concepts</h3>
-            <ul>
-                <li><a href="state.html">State Management</a></li>
-                <li><a href="props.html">Props</a></li>
-                <li><a href="events.html">Event Handling</a></li>
-                <li><a href="hooks.html">Hooks</a></li>
-            </ul>
-            <h3 style="margin-top: 2rem;">Advanced</h3>
-            <ul>
-                <li><a href="lists.html">Lists & Keys</a></li>
-                <li><a href="conditional.html">Conditional Rendering</a></li>
-            </ul>
-        </aside>
-
-        <main class="content">
-            <div class="intro-highlight">
-                <h1>Welcome to ReactJS Tutorial</h1>
-                <p style="font-size: 1.125rem; opacity: 0.9;">Master the world's most popular JavaScript library for building user interfaces. Simple, declarative, and component-based.</p>
-                <div style="margin-top: 1.5rem;">
-                    <a href="components.html" class="demo-button" style="text-decoration: none;">Get Started →</a>
-                </div>
-            </div>
-            
-            <div class="info-box">
-                <strong>📘 What is React?</strong>
-                <p>React is a JavaScript library for building user interfaces. It's maintained by Facebook and a community of individual developers and companies.</p>
-            </div>
-
-            <h2>Why Learn React?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Component-Based</h3>
-                    <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Declarative</h3>
-                    <p>Design simple views for each state in your application, and React will efficiently update and render just the right components.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Virtual DOM</h3>
-                    <p>React uses a Virtual DOM to minimize direct manipulation of the browser's DOM, resulting in much faster updates.</p>
-                </div>
-            </div>
-
-            <h2>Prerequisites</h2>
-            <div class="warning-box">
-                <strong>⚠️ Recommended Knowledge:</strong>
-                <ul style="margin-bottom: 0;">
-                    <li>HTML & CSS (Basics)</li>
-                    <li>JavaScript (ES6+ features like arrow functions, destructuring)</li>
-                    <li>Basic understanding of the DOM</li>
-                </ul>
-            </div>
-
-            <h2>Quick Start</h2>
-            <div class="code-block" style="background-color: var(--code-bg); color: white;">
-                <pre style="margin: 0; box-shadow: none;"><code># Create a new React app
-npx create-react-app my-app
-cd my-app
-npm start</code></pre>
-            </div>
-
-            <h2 style="margin-top: 3rem;">Your First Component</h2>
-            <pre><code>function Welcome() {
-  return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
-}
-
-// Rendering the component
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(&lt;Welcome /&gt;);</code></pre>
-
-            <button class="demo-button" data-demo="component">Run Live Demo</button>
-            <div id="demo-output-component" style="margin-top: 20px;"></div>
-
-            <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.875rem;">
-                <p>© 2026 Florante's ReactJS Tutorial. Built with modern web standards.</p>
-            </footer>
-        </main>
-    </div>
-
-    <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temp_app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
