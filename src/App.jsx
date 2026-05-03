@@ -15,7 +15,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <Router basename="/Reactjs-tutorial/">
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Introduction />} />
